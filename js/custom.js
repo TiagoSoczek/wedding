@@ -121,7 +121,7 @@ function initialize() {
 		{
 			"featureType": "road",
 			"stylers": [
-				{ "hue": "#ff3300" },
+				{ "hue": "#895c44" },
 				{ "gamma": 0.82 },
 				{ "visibility": "on" },
 				{ "saturation": 62 },
@@ -130,18 +130,18 @@ function initialize() {
 		},{
 			"featureType": "poi",
 			"stylers": [
-				{ "hue": "#ff0000" },
+				{ "hue": "#895c44" },
 				{ "lightness": 14 }
 			]
 		},{
 			"stylers": [
-				{ "hue": "#ff0000" }
+				{ "hue": "#895c44" }
 			]
 		}
 	]
 
 	var mapOptions = {
-		zoom: 18,
+		zoom: 16,
 		center: myLatlng,
 		disableDefaultUI: true,
 		scrollwheel: false,
