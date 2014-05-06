@@ -105,7 +105,7 @@ $(document).ready(function() {
 /*-----------------------------------------------------------------------------------*/
 
 var map;
-var myLatlng = new google.maps.LatLng(41.38031,2.17416); // Specify YOUR coordinates
+var myLatlng = new google.maps.LatLng(-25.4273393,-49.320818,17); // Specify YOUR coordinates
 
 var MY_MAPTYPE_ID = 'custom_style';
 
@@ -164,7 +164,7 @@ function initialize() {
 	var image = new google.maps.MarkerImage("img/map-marker@2x.png", null, null, null, new google.maps.Size(55,57));
 
 	// Includes custom marker on map
-	var myLatLng = new google.maps.LatLng(41.38031,2.17416);
+	var myLatLng = new google.maps.LatLng(-25.4273393,-49.320818,17);
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,

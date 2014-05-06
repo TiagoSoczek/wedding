@@ -1,23 +1,3 @@
-/*------------------------------------------------------------------------------------
-
-	Theme Name: Eternity
-	Theme URI: http://demo.themechills.com/eternity
-	Description: A beautiful landing page template for all wedding occasions.
-	Author: ThemeChills
-	Author URI: http://www.themechills.com
-
---------------------------------------------------------------------------------------
-
-	1.	Overrides
-	2.	Main Content Styles
-	3.	Sidebar Styles
-	4.	Forms - Base Styles
-	5.	Image Gallery
-	6.	Footer Styles
-	7.	Helpers
-
-------------------------------------------------------------------------------------*/
-
 @font-face {
     font-family: 'ostrich_sansbold';
     src: url('../fonts/ostrich-bold-webfont.eot');
@@ -574,7 +554,20 @@ label.error {
 	width: 100%;
 	z-index: 997;
 	text-align: left;
+	background-color: #895c44;
 }
+
+.top-bar.expanded .title-area
+{
+	background-color: #895c44;
+}
+
+.top-bar.expanded .toggle-topbar a span
+{
+	-webkit-box-shadow: 0 10px 0 1px #FFF,0 16px 0 1px #FFF,0 22px 0 1px #FFF;
+	box-shadow: 0 10px 0 1px #FFF,0 16px 0 1px #FFF,0 22px 0 1px #FFF;
+}
+
 .top-bar .name {
 	color:#fff;
 	font-weight: bold;
@@ -582,15 +575,24 @@ label.error {
 	padding-left: 1em;
 	margin-right: 1em;
 }
+
+.top-bar-section ul {
+	background-color: #895c44;	
+}
+
 .top-bar-section ul li {
-	border-bottom: 1px dotted #222222;
+	border-bottom: 1px dotted #FFF;
 }
 .top-bar-section ul li > a {
-	background: #111111;
+	background: #895c44 !important;
 	font-weight: normal;
 }
 .top-bar-section ul li:first-child {
 	display: none;
+}
+
+.top-bar.expanded .toggle-topbar a {
+	color: #FFF;
 }
 
 /*-----------------------------------------------------------------------------------*/
