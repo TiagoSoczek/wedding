@@ -34,7 +34,7 @@ $(document).ready(function() {
 	function backStrech() {
 		$("aside").backstretch([
 			"img/placeholder-1.jpg"
-			], {duration: 5000, fade: 1000});
+			], {duration: 0, fade: 0});
 	}
 
 	backStrech();
@@ -67,14 +67,18 @@ $(document).ready(function() {
 		formID.on("submit", function() {
 
 			$.ajax({
-				url: "mailer.php",
+				url: "rsvp.php",
 				type: "POST",		    	
 		        data: formID.serialize(), // serializes the form's elements.
 
 		        success: function(data) {
+		        	
+		        	formID[0].reset();
+
 		        	$(".js-display")
 		        				.addClass("message-panel")
 		        				.html(data); // show response from the php script.
+		        	alert(data);		        				
 		        }		    
 
 		    });
